@@ -49,7 +49,7 @@ npm run dev
 
 ## Live Demo
 
-[Link to hosted app will go here]
+https://prompt-quest-delta.vercel.app/
 
 ## Tech Stack
 
