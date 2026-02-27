@@ -24,13 +24,13 @@ export async function POST(request: NextRequest) {
     }
 
     // Step 1: Execute the user's prompt to get AI response
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-flash-latest' });
     const aiResult = await model.generateContent(userPrompt);
     const aiOutput = aiResult.response.text();
 
     // Step 2: Judge whether the response meets the success criteria
     const judgeModel = genAI.getGenerativeModel({
-      model: 'gemini-1.5-flash',
+      model: 'gemini-flash-latest',
       generationConfig: { responseMimeType: 'application/json' },
     });
 
