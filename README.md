@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PromptQuest
 
-## Getting Started
+An interactive game that teaches prompt engineering techniques through fun challenges. Master AI prompting one level at a time.
 
-First, run the development server:
+![PromptQuest Screenshot](screenshots/game.png)
 
+## What is this?
+
+PromptQuest turns learning prompt engineering into a game. Each level teaches a specific technique:
+
+1. **Be Specific** - Learn why vague prompts get vague answers
+2. **Set Constraints** - Use limits to focus AI creativity
+3. **Assign a Role** - Give AI a persona for better responses
+4. **Give Examples** - Master few-shot prompting
+5. **Think Step by Step** - Chain-of-thought reasoning
+6. **Format Your Output** - Control response structure
+7. **Provide Context** - Set the scene for relevance
+8. **Iterate and Refine** - Perfect your prompts
+
+## How to Run
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/prompt-quest.git
+cd prompt-quest
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Set up your environment variables:
+```bash
+cp .env.example .env.local
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Add your Gemini API key to `.env.local` (free at [aistudio.google.com](https://aistudio.google.com)):
+```
+GEMINI_API_KEY=your_gemini_api_key_here
+```
 
-## Learn More
+5. Run the development server:
+```bash
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+6. Open [http://localhost:3000](http://localhost:3000)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Live Demo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[Link to hosted app will go here]
 
-## Deploy on Vercel
+## Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Next.js 15 (App Router)
+- TypeScript
+- Tailwind CSS
+- Google Gemini API (gemini-1.5-flash)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## How It Works
+
+1. Each level presents a prompting challenge
+2. You write a prompt to complete the challenge
+3. The AI executes your prompt
+4. A judge AI evaluates if you met the success criteria
+5. Get feedback and tips to improve
+6. Earn points and progress to the next level
+
+## Built For
+
+AI Build Sprint Week 3: Interactive AI Tutorials
+
+---
+
+Built by Jake Strait
